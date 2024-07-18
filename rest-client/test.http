@@ -1,0 +1,5 @@
+@endpoint = https://r9l6tsq360.execute-api.ap-northeast-2.amazonaws.com
+
+###post
+
+POST {{endpoint}}/subscribe
