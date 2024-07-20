@@ -23,8 +23,10 @@ jobs:
           npm install
           npx tsc -p tsconfig.build.json
           npm install --omit=dev
-          mv node_modules dist
-          zip -r dist.zip dist
+          mv node_modules dist/
+          cd dist
+          zip -r ../dist.zip .
+          cd ..
           echo "Build complete"
 
       - name: Configure AWS credentials
